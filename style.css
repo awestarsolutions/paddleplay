@@ -30,7 +30,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/home/ashish/.gemini/antigravity/brain/bc7cd89e-6b8b-4e39-87b0-50becf08027c/paddleplay_hero_1774457041576.png');
+    background-image: url('assets/hero.png');
     background-size: cover;
     background-position: center;
     z-index: -2;
