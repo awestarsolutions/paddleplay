@@ -33,7 +33,7 @@ CREATE TABLE `events` (
   `description` text COLLATE utf8mb4_unicode_ci,
   `image_path` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `event_date` datetime NOT NULL,
-  `location" varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `location` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `price` decimal(10,2) NOT NULL,
   `skill_level` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'upcoming',
