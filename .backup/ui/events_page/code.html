@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-dim": "#535252",
+              "inverse-surface": "#0c0f0e",
+              "outline": "#747c7c",
+              "outline-variant": "#abb4b3",
+              "primary-fixed-dim": "#d6d4d3",
+              "on-tertiary-fixed-variant": "#48675e",
+              "on-error-container": "#752121",
+              "surface": "#f9f9f8",
+              "inverse-primary": "#ffffff",
+              "surface-container": "#eaefee",
+              "on-surface": "#2c3433",
+              "error-dim": "#4e0309",
+              "primary-fixed": "#e5e2e1",
+              "surface-dim": "#d2dcdb",
+              "surface-container-highest": "#dce4e3",
+              "tertiary-fixed-dim": "#c2e4d9",
+              "secondary-fixed-dim": "#d6d4d3",
+              "error-container": "#fe8983",
+              "secondary-fixed": "#e4e2e1",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "secondary-dim": "#535353",
+              "tertiary-dim": "#3a5951",
+              "on-error": "#fff7f6",
+              "surface-tint": "#5f5e5e",
+              "secondary": "#5f5f5f",
+              "tertiary-container": "#d0f3e7",
+              "surface-container-high": "#e3e9e8",
+              "on-background": "#2c3433",
+              "on-primary-container": "#525151",
+              "inverse-on-surface": "#9b9d9d",
+              "primary-container": "#e5e2e1",
+              "primary": "#5f5e5e",
+              "on-secondary-fixed": "#3f3f3f",
+              "on-primary-fixed": "#403f3f",
+              "secondary-container": "#e4e2e1",
+              "tertiary": "#46655d",
+              "on-tertiary-fixed": "#2b4a42",
+              "background": "#f9f9f8",
+              "on-surface-variant": "#586160",
+              "tertiary-fixed": "#d0f3e7",
+              "on-secondary": "#fbf8f8",
+              "on-primary": "#faf7f6",
+              "surface-variant": "#dce4e3",
+              "on-tertiary-container": "#3e5d54",
+              "error": "#9f403d",
+              "on-secondary-fixed-variant": "#5c5b5b",
+              "on-tertiary": "#e3fff5",
+              "surface-container-low": "#f1f4f3",
+              "surface-bright": "#f9f9f8",
+              "on-secondary-container": "#525252"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-tertiary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9f8]/80 dark:bg-[#0f2e2a]/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold tracking-tighter text-[#0f2e2a] dark:text-[#ffffff] font-['Manrope']">PaddlePlay</div>
+<div class="hidden md:flex items-center space-x-8 font-['Manrope'] font-bold tracking-tight text-[#5f5e5e] dark:text-[#eaefee]">
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#0f2e2a] transition-colors" href="#">Home</a>
+<a class="text-[#46655d] dark:text-[#d0f3e7] border-b-2 border-[#46655d] pb-1" href="#">Events</a>
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#0f2e2a] transition-colors" href="#">About</a>
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#0f2e2a] transition-colors" href="#">Shop</a>
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#0f2e2a] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-tertiary text-on-tertiary px-6 py-2 rounded-sm font-bold tracking-tight hover:opacity-80 transition-opacity active:scale-95 duration-150">
+                Join Event
+            </button>
+</nav>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 py-12">
+<div class="max-w-2xl">
+<span class="text-tertiary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Competitive &amp; Social</span>
+<h1 class="text-6xl font-extrabold tracking-tighter text-on-surface mb-6 leading-tight">Elite Padel <br/>Events Ecosystem.</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-lg">
+                        Experience the architectural precision of sport. From high-stakes tournaments to community mixers, find your next challenge on the court.
+                    </p>
+</div>
+<div class="flex items-center gap-4">
+<div class="h-16 w-1px bg-outline-variant/30 hidden md:block"></div>
+<div class="text-right">
+<span class="block text-3xl font-bold text-tertiary">24</span>
+<span class="text-xs font-bold uppercase tracking-widest text-outline">Open Tournaments</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter System -->
+<section class="max-w-7xl mx-auto px-8 mb-12">
+<div class="bg-surface-container-low p-2 rounded-lg flex flex-wrap md:flex-nowrap items-center gap-2">
+<div class="flex-1 min-w-[200px] relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">location_on</span>
+<select class="w-full bg-surface-container-lowest border-none py-4 pl-12 pr-4 text-sm font-medium focus:ring-0 rounded-sm appearance-none cursor-pointer">
+<option>All Locations</option>
+<option>Stockholm, SE</option>
+<option>Madrid, ES</option>
+<option>London, UK</option>
+<option>Dubai, UAE</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px] relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">calendar_today</span>
+<select class="w-full bg-surface-container-lowest border-none py-4 pl-12 pr-4 text-sm font-medium focus:ring-0 rounded-sm appearance-none cursor-pointer">
+<option>Any Date Range</option>
+<option>This Weekend</option>
+<option>Next 30 Days</option>
+<option>Seasonal Leagues</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px] relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">military_tech</span>
+<select class="w-full bg-surface-container-lowest border-none py-4 pl-12 pr-4 text-sm font-medium focus:ring-0 rounded-sm appearance-none cursor-pointer">
+<option>All Skill Levels</option>
+<option>Beginner (1.0-2.5)</option>
+<option>Intermediate (3.0-4.0)</option>
+<option>Advanced (4.5+)</option>
+</select>
+</div>
+<button class="bg-primary text-on-primary px-8 py-4 font-bold rounded-sm hover:bg-primary-dim transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">search</span>
+                    Apply Filters
+                </button>
+</div>
+</section>
+<!-- Event Grid -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Event Card 1 -->
+<div class="group bg-surface-container-lowest flex flex-col hover:bg-surface-bright transition-all duration-300 cursor-pointer">
+<div class="aspect-[16/10] relative overflow-hidden">
+<img alt="Professional Padel Court" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-700" data-alt="Modern indoor padel court with blue turf and glass walls captured from a low angle with professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrY_lWMRhzFjgs_bCfzdungL4yjnRPdQlW35MKBPhTtUZxOOC8l-QCmTU4inWZJ8sRmdI5_tpS6ntfIi6vF8l3W7tLAPayucOCQ7iH1p2yVllukq7AoQ3s7FJnKAZrVaSty_dE1Jnhn1gJty83X7oYsPbZFRnmWCGm9WW0azkSZqLiChN85Vb3fsDCQAfZR7FuSLPWX3VPKppdf5si5c-2xz0__BOaqIkZWVylcwsTgAQxI_rWXn05p7a7AWlLhCQSe6OwzKsUYvo"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Pro League</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="text-outline font-bold text-[10px] uppercase tracking-[0.2em]">Aug 14-16 • Madrid</span>
+<span class="text-tertiary font-bold text-sm">$120</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-4 group-hover:text-tertiary transition-colors">The Solstice Masters Open</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-1">
+                            High-intensity double elimination tournament for advanced tier players. Elite amenities provided.
+                        </p>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/10">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a male athlete in sports gear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCluUo04aR3Totk2lIm4WEgMTFpQ3qblJsGQyDgCqcmsYssCV5bQvEMZU7_GWmUblKIgolHofdakmN9RxM-swutRlDs0mDA4OBjvrAWobUd0i8jk5Z5-yKRaR8K_Rn_PMmxH22Yf7nKsk-GcXPNs5AMoM_YDRgD6OZYw67UJ7mdMKkqp_lOChdiYbX82b34rwBn79yUqmVCbynIXAVRK7RguNV6rqsNgl4oYM3TPfAZKjXPfy_MgBPHf8KNMY6cwZAWP0XKbil4EVU"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a female athlete in sports gear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGui60WKCNCxV1MCGTRvaIxZgQ3m2dBIJ-WO5e1RVxrRdr85XtVK37H6iDzodNLZGl1fjAnkl1vZxdy5S7r8Jix4OWcupe1RhPoWb-xCiL1saNJz_4T0nLfNRGbl5vnIgBe3HXpsIEJZArsJNY-JpsJm4fD-S884u_vp0Br7A_Wxi8lXvuM1rsSLTIa5Q-W5uZW83TVpw0qwOUWBajbhI2NC3ThQHTaOggVeYmEPs9vwNCFBVB1ZFzEieJuLS4AY2HCTI4r5Tb4BY"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-tertiary-container flex items-center justify-center text-[10px] font-bold text-on-tertiary-container">
+                                    +12
+                                </div>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-outline">4 Slots Left</span>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="group bg-surface-container-lowest flex flex-col hover:bg-surface-bright transition-all duration-300 cursor-pointer">
+<div class="aspect-[16/10] relative overflow-hidden">
+<img alt="Padel Rackets" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-700" data-alt="Close up of high-end carbon fiber padel rackets leaning against a minimalist concrete wall with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxKg9cg5EPEzV2aubph0dVHuWSHQj0hZMxXOf-orq-_XNrv56BtNW-nCVtoVABqSp0KJAXQE276egcbMTkej3t7c9-hvQs4sXMHGtEAYwkcFgNhE_S77_6NkTh3bdG_PlkXgOeLvqUBeWhBSN4Yp_UmY5Uxt19ZIGJI2tvIV0Pp2fmiwYr6NGrdGOiCPpIqJ0CN6g2DM3QITCz0kwYQCIXHVh6j0avNIuDRPvdo3gK5HaAGzz3qgegwUW5IyfXchynOvWFUJFknL0"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Social Mixer</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="text-outline font-bold text-[10px] uppercase tracking-[0.2em]">Aug 20 • Stockholm</span>
+<span class="text-tertiary font-bold text-sm">$45</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-4 group-hover:text-tertiary transition-colors">Midsummer Night Rally</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-1">
+                            A relaxed evening of rotating matches followed by networking and refreshments. All levels welcome.
+                        </p>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/10">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a woman in athletic apparel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqk6vdXzoq5IsnocGDb-H6AB7K0iLbsM1dy-lCPCIwXls8ShVGyC8dk9cdr85M9w0BlRmhvzWDnOs9Iig8Wk9WM8gfBgevammlpAxo5XPPgV3QzmlA0TewkV5RGZNIIPmeEB3-EU9m0DW5juEePzzvuyyaVS6m0W1USE0c1RuqQogewgnEYpehXpT78V7i0H9TheveAFeKgsFLu5c12gygE6L6cmYeEFR-bD245zPwE05gArVxlVC58pYFcaBm54Gp9ben7Am9p-U"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-tertiary-container flex items-center justify-center text-[10px] font-bold text-on-tertiary-container">
+                                    +42
+                                </div>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-tertiary">Limited Spots</span>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="group bg-surface-container-lowest flex flex-col hover:bg-surface-bright transition-all duration-300 cursor-pointer">
+<div class="aspect-[16/10] relative overflow-hidden">
+<img alt="Training Session" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-700" data-alt="Action shot of a player hitting a volley on a padel court with dust particles catching sunbeams in a moody indoor arena" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaP0XQiQ8uKZcCol9WXTGu8H1EV-Hn32_nOeztl531aoYJ_0jBPMhCTnxwOu6lye-2H1CHXlJ3xn81eWW8lLnqA5iA3rx6Cii1k82-316T16XRo7m0SZhY5yurxBMgDZC6pTZDwy52jQk6HsoPAZnyGlseKuA3eAaPxsQozpE_T_6oA4IbpP9Uy8JdGgOwO1yAJSFZ-oSGZq6zyWcWn21K8aao9iSvQqd3ksrypQvs0mujVSKJMGa96apTtFr1sbdCCs0gG3HVAZY"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-surface-container-highest text-on-surface-variant text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Workshop</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="text-outline font-bold text-[10px] uppercase tracking-[0.2em]">Aug 25 • London</span>
+<span class="text-tertiary font-bold text-sm">$80</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-4 group-hover:text-tertiary transition-colors">Tactical Defense Clinic</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-1">
+                            Master the art of the glass. Intensive 4-hour clinic with certified WPT level coaches.
+                        </p>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/10">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a male professional coach" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcy6h95Bskc3OVJr5VugvgZ1pW1EewLCLOFkrY3upFUmbqbPNCAyREYa-Og-1HuU6Wnk0Vcda2XE4XAgI-QcDMDD1mij5Tq-SRtmU8MBp6mQGUav7z6-CdF_opspwn8gICiTCO_AQ0bkQx-GwQ3IcDCwZ6HV2M0mrviT-RVYQzXk2qBIYWis7_TR2Ge8tC0JCluBlg7Tt99l8jvNlQR5fG5nxXGcoFzTVlO31TMIdCJ1fqDn-X1QeIa3SLm2d4GTDtpUrcF-8FVb8"/>
+</div>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-outline">8 Attendees Max</span>
+</div>
+</div>
+</div>
+<!-- Event Card 4 -->
+<div class="group bg-surface-container-lowest flex flex-col hover:bg-surface-bright transition-all duration-300 cursor-pointer">
+<div class="aspect-[16/10] relative overflow-hidden">
+<img alt="Corporate Event" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-700" data-alt="Aerial view of multiple padel courts in a luxury club during a sunny day with architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuHoLijLZFnc1uLWEGMMnNqDgo0A7WdJyPn3SlAedN78gzLeyl5iMSWXBhrzyBOqGmNHKkoaslELd5JIVLCCm7KRfj_VsewT82TkYA4zFVnpPQbjCIdGoIhi9AM8guALiZ_fF6hN3k3UcaSLLxbO_kL-ttVrqrD3Ux8JEfk2O3Mvx1_v1q6CsoRoI20O-5aInB3G50pU3k_pf8L29DWPnv3AdZ62qkCVMgy-DQIXetnyz8gTYuL99mj5V1ATdbDwmDD9JbtToKX-s"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Corporate</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="text-outline font-bold text-[10px] uppercase tracking-[0.2em]">Sep 02 • Dubai</span>
+<span class="text-tertiary font-bold text-sm">Inquiry Only</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-4 group-hover:text-tertiary transition-colors">Tech-Industry Cup</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-1">
+                            A curated tournament for technology firms. High-level competition and premium hospitality.
+                        </p>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-tertiary">verified</span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface">Private Event</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 5 -->
+<div class="group bg-surface-container-lowest flex flex-col hover:bg-surface-bright transition-all duration-300 cursor-pointer">
+<div class="aspect-[16/10] relative overflow-hidden">
+<img alt="Junior Padel" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-700" data-alt="Modern geometric pattern on a padel court surface with vibrant shadows and clean lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXfv-yoxEWHpJ-cDpQ-jGhSwmnmFF9EGra-v03vPCFw_J543Q-b8JF8YvA75lpMw1OodbC-Z1m9hV9weVxSAEgC600iAOs4qNYnV-C2Pj9tVjS0ZyCwvLJ1MvLr6qx1oWcSVQfkOvw8QP4QdJe4CsTovZ_Mf3dv2PNkomV-W4Ctc3AO1f3wLuyl5K7WbXu8qjSwn9VGwA45MAeg0ReLYGNTIMs49UrFEOpO0CWVWZHG5m7D8cjusCuHtFQeKuPoPLYmG2BVM37sQE"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Youth</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="text-outline font-bold text-[10px] uppercase tracking-[0.2em]">Sep 10-12 • Barcelona</span>
+<span class="text-tertiary font-bold text-sm">$65</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-4 group-hover:text-tertiary transition-colors">Future Stars Championship</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-1">
+                            U18 regional qualifier. Focused on skill development, sportsmanship, and competitive growth.
+                        </p>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-widest text-outline">Open Registration</span>
+</div>
+</div>
+</div>
+<!-- Call to Action Card -->
+<div class="bg-tertiary p-8 flex flex-col justify-center items-start text-on-tertiary rounded-sm group relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-tertiary-dim/30 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
+<h3 class="text-3xl font-extrabold tracking-tighter mb-4 relative z-10">Host Your Own Event.</h3>
+<p class="text-on-tertiary/80 text-sm leading-relaxed mb-8 relative z-10">
+                        Leverage the PaddlePlay platform to organize, manage, and monetize your padel tournaments effortlessly.
+                    </p>
+<button class="bg-on-tertiary text-tertiary px-8 py-3 font-bold text-xs uppercase tracking-widest rounded-sm hover:opacity-90 transition-opacity relative z-10">
+                        Get Started
+                    </button>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer Support Section -->
+<section class="max-w-7xl mx-auto px-8 mt-32">
+<div class="bg-surface-container py-20 px-12 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<h2 class="text-4xl font-extrabold tracking-tighter text-on-surface mb-4">The Playbook.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Stay updated on upcoming tournaments, exclusive court openings, and professional gear releases.
+                    </p>
+</div>
+<div class="md:w-1/2 w-full flex gap-2">
+<input class="flex-1 bg-surface-container-lowest border-none px-6 py-4 text-sm focus:ring-1 focus:ring-tertiary rounded-sm" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 font-bold rounded-sm uppercase tracking-widest text-xs hover:bg-primary-dim transition-colors">
+                        Subscribe
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-[#eaefee] dark:bg-[#0a1f1c]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto font-['Inter'] text-sm tracking-wide uppercase">
+<div class="space-y-6">
+<div class="text-xl font-black text-[#0f2e2a] dark:text-[#ffffff] font-['Manrope']">PaddlePlay</div>
+<p class="text-[#5f5e5e] dark:text-[#abb4b3] normal-case tracking-normal">
+                    Architectural Precision in Sport. Redefining the padel experience through design and community.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-bold text-[#46655d]">Explore</span>
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#46655d] dark:hover:text-[#d0f3e7] transition-all opacity-100 hover:opacity-70" href="#">Newsletter</a>
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#46655d] dark:hover:text-[#d0f3e7] transition-all opacity-100 hover:opacity-70" href="#">Instagram</a>
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#46655d] dark:hover:text-[#d0f3e7] transition-all opacity-100 hover:opacity-70" href="#">Twitter</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-bold text-[#46655d]">Support</span>
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#46655d] dark:hover:text-[#d0f3e7] transition-all opacity-100 hover:opacity-70" href="#">Contact</a>
+<a class="text-[#5f5e5e] dark:text-[#abb4b3] hover:text-[#46655d] dark:hover:text-[#d0f3e7] transition-all opacity-100 hover:opacity-70" href="#">Privacy</a>
+</div>
+<div class="flex flex-col space-y-4 text-[#5f5e5e] dark:text-[#abb4b3]">
+<span class="font-bold text-[#46655d]">Status</span>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+<span class="normal-case tracking-normal">Systems Operational</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10">
+<p class="text-[#5f5e5e] dark:text-[#abb4b3] text-xs">© 2024 PaddlePlay. Architectural Precision in Sport.</p>
+</div>
+</footer>
+</body></html>

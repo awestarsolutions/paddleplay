@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | PaddlePlay</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#e5e2e1",
+              "on-secondary-container": "#525252",
+              "background": "#f9f9f8",
+              "on-tertiary": "#e3fff5",
+              "surface-dim": "#d2dcdb",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#c2e4d9",
+              "on-secondary-fixed-variant": "#5c5b5b",
+              "surface-container-low": "#f1f4f3",
+              "secondary-dim": "#535353",
+              "secondary-fixed": "#e4e2e1",
+              "error-dim": "#4e0309",
+              "surface-variant": "#dce4e3",
+              "surface-container-high": "#e3e9e8",
+              "outline-variant": "#abb4b3",
+              "tertiary": "#46655d",
+              "primary-dim": "#535252",
+              "on-tertiary-fixed-variant": "#48675e",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "surface": "#f9f9f8",
+              "primary-fixed-dim": "#d6d4d3",
+              "on-surface-variant": "#586160",
+              "on-error": "#fff7f6",
+              "on-primary": "#faf7f6",
+              "outline": "#747c7c",
+              "surface-tint": "#5f5e5e",
+              "on-secondary": "#fbf8f8",
+              "error": "#9f403d",
+              "on-tertiary-container": "#3e5d54",
+              "tertiary-fixed": "#d0f3e7",
+              "tertiary-container": "#d0f3e7",
+              "secondary": "#5f5f5f",
+              "primary": "#5f5e5e",
+              "surface-container": "#eaefee",
+              "on-tertiary-fixed": "#2b4a42",
+              "surface-bright": "#f9f9f8",
+              "inverse-on-surface": "#9b9d9d",
+              "tertiary-dim": "#3a5951",
+              "primary-fixed": "#e5e2e1",
+              "on-secondary-fixed": "#3f3f3f",
+              "on-primary-fixed": "#403f3f",
+              "on-primary-container": "#525151",
+              "on-error-container": "#752121",
+              "inverse-primary": "#ffffff",
+              "error-container": "#fe8983",
+              "on-background": "#2c3433",
+              "secondary-container": "#e4e2e1",
+              "secondary-fixed-dim": "#d6d4d3",
+              "on-surface": "#2c3433",
+              "inverse-surface": "#0c0f0e",
+              "surface-container-highest": "#dce4e3"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9f8]/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-extrabold tracking-tighter text-[#0f2e2a]">PaddlePlay</span>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#5f5e5e] hover:text-[#0f2e2a] transition-colors font-['Manrope'] font-bold tracking-tight" href="#">Home</a>
+<a class="text-[#46655d] border-b-2 border-[#46655d] pb-1 font-['Manrope'] font-bold tracking-tight" href="#">About</a>
+<a class="text-[#5f5e5e] hover:text-[#0f2e2a] transition-colors font-['Manrope'] font-bold tracking-tight" href="#">Events</a>
+<a class="text-[#5f5e5e] hover:text-[#0f2e2a] transition-colors font-['Manrope'] font-bold tracking-tight" href="#">Shop</a>
+<a class="text-[#5f5e5e] hover:text-[#0f2e2a] transition-colors font-['Manrope'] font-bold tracking-tight" href="#">Contact</a>
+</div>
+<button class="bg-tertiary text-on-tertiary px-6 py-2.5 text-sm font-bold rounded-DEFAULT hover:opacity-80 transition-opacity active:scale-95 duration-150">
+                Join Event
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Intro Text Section: Architectural Precision -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="flex flex-col md:flex-row items-end justify-between gap-12">
+<div class="max-w-3xl">
+<span class="text-tertiary font-label text-xs tracking-[0.2em] uppercase mb-6 block">Our Foundation</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-background leading-[1.1]">
+                        Architectural <span class="text-tertiary">precision</span> in every stroke.
+                    </h1>
+</div>
+<div class="max-w-sm pb-4">
+<p class="text-on-surface-variant leading-relaxed">
+                        We believe sport is the ultimate expression of human geometry. Our mission is to provide the canvas where elite technique meets architectural design.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Our Story Section: Clean Layout & High Quality Imagery -->
+<section class="bg-surface-container-low py-32 mb-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5">
+<span class="text-tertiary font-label text-xs tracking-[0.2em] uppercase mb-8 block">The Genesis</span>
+<h2 class="text-4xl font-bold mb-8 tracking-tight">Born on the court, refined by design.</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p>
+                                Founded in 2020, PaddlePlay emerged from a simple observation: the world of paddle sports lacked a platform that mirrored the precision of the game itself.
+                            </p>
+<p>
+                                We started as a small group of architects and athletes who saw the court not just as a place to play, but as a structure to be mastered. This dual perspective informs everything we do, from tournament curation to the gear we select for our shop.
+                            </p>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="aspect-[4/5] relative overflow-hidden bg-surface-container rounded-lg">
+<img alt="Minimalist modern paddle court" class="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]" data-alt="Modern architectural paddle court with clean blue lines and glass walls in soft afternoon daylight with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArShH2-eMfrtEyrXZl1Y1eUpmM_1af9vKcau-wz1GW26jb5-IFgOOHB6QNNb6HtmBkH4kOT33JJOJf_-8dDV19wvwD5s2XkWFzwU55LPt25lIw3fDIgtJUOvd7gLkvZxYmYkFAwP4fwQyOZw3B5wvTi3QY6XIylU7TUOmhOMSLQJpzB_J06n5O8-eFc3vj6m-sLl-xJcxG3fTXIfEE9Yeh1SDeXVUAjK-Y0qPpPCNcnA3gWsQIMRxWJiO4Axfx-DWrZuq_MtQPVw8"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Section: Grid of Text Blocks -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="text-center mb-24">
+<span class="text-tertiary font-label text-xs tracking-[0.2em] uppercase mb-4 block">Core Principles</span>
+<h2 class="text-3xl md:text-5xl font-bold tracking-tight">The Three Pillars of Play</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Pillar 1 -->
+<div class="group">
+<div class="mb-10 text-tertiary">
+<span class="material-symbols-outlined text-4xl" data-icon="architecture">architecture</span>
+</div>
+<h3 class="text-xl font-bold mb-6 tracking-tight">Structural Integrity</h3>
+<p class="text-on-surface-variant leading-relaxed font-body">
+                        We prioritize the mechanics of the game. Every event we host is structured to reward technical proficiency and strategic movement over brute force.
+                    </p>
+</div>
+<!-- Pillar 2 -->
+<div class="group">
+<div class="mb-10 text-tertiary">
+<span class="material-symbols-outlined text-4xl" data-icon="groups">groups</span>
+</div>
+<h3 class="text-xl font-bold mb-6 tracking-tight">Curated Community</h3>
+<p class="text-on-surface-variant leading-relaxed font-body">
+                        Sport is a shared language. We foster a community of professionals who value respect, discipline, and the pursuit of excellence on and off the court.
+                    </p>
+</div>
+<!-- Pillar 3 -->
+<div class="group">
+<div class="mb-10 text-tertiary">
+<span class="material-symbols-outlined text-4xl" data-icon="diamond">diamond</span>
+</div>
+<h3 class="text-xl font-bold mb-6 tracking-tight">Refined Aesthetic</h3>
+<p class="text-on-surface-variant leading-relaxed font-body">
+                        Style is a functional element. We believe that playing in an environment of beauty and order enhances performance and focuses the mind.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Community CTA Section -->
+<section class="max-w-7xl mx-auto px-8 mb-20">
+<div class="bg-tertiary text-on-tertiary p-16 md:p-24 rounded-lg flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-xl">
+<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-6">Ready to elevate your game?</h2>
+<p class="text-on-tertiary/80 text-lg">Join a network of athletes who view the court as their architectural canvas.</p>
+</div>
+<button class="bg-surface-container-lowest text-tertiary px-10 py-5 text-base font-bold rounded-DEFAULT hover:opacity-90 transition-all active:scale-95">
+                    Explore Events
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-[#eaefee]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-black text-[#0f2e2a]">PaddlePlay</span>
+<p class="mt-6 text-[#5f5e5e] text-sm font-['Inter'] leading-relaxed">
+                    Architectural Precision in Sport. Defining the future of paddle through design and community.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Inter'] text-sm tracking-wide uppercase font-bold text-[#0f2e2a]">Network</span>
+<a class="text-[#5f5e5e] hover:text-[#46655d] transition-all font-['Inter'] text-sm tracking-wide uppercase" href="#">Newsletter</a>
+<a class="text-[#5f5e5e] hover:text-[#46655d] transition-all font-['Inter'] text-sm tracking-wide uppercase" href="#">Instagram</a>
+<a class="text-[#5f5e5e] hover:text-[#46655d] transition-all font-['Inter'] text-sm tracking-wide uppercase" href="#">Twitter</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Inter'] text-sm tracking-wide uppercase font-bold text-[#0f2e2a]">Company</span>
+<a class="text-[#5f5e5e] hover:text-[#46655d] transition-all font-['Inter'] text-sm tracking-wide uppercase" href="#">Contact</a>
+<a class="text-[#5f5e5e] hover:text-[#46655d] transition-all font-['Inter'] text-sm tracking-wide uppercase" href="#">Privacy</a>
+<a class="text-[#5f5e5e] hover:text-[#46655d] transition-all font-['Inter'] text-sm tracking-wide uppercase" href="#">Philosophy</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Inter'] text-sm tracking-wide uppercase font-bold text-[#0f2e2a]">Legal</span>
+<p class="text-[#5f5e5e] text-xs leading-relaxed">
+                    All rights reserved. Our architectural designs and branding are protected by international intellectual property laws.
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-outline-variant/10">
+<p class="text-[#5f5e5e] font-['Inter'] text-sm tracking-wide uppercase">© 2024 PaddlePlay. Architectural Precision in Sport.</p>
+</div>
+</footer>
+</body></html>

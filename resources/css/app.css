@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --surface: #f9f9f8;
+        --surface-container-low: #f1f4f3;
+        --surface-container: #eaefee;
+        --surface-container-lowest: #ffffff;
+        --primary: #5f5e5e;
+        --primary-dim: #535252;
+        --tertiary: #46655d;
+        --tertiary-container: #d0f3e7;
+        --on-tertiary-container: #002019;
+        --on-surface: #2c3433;
+        --on-surface-variant: #404948;
+        --outline-variant: rgba(171, 180, 179, 0.15);
+    }
+
+    body {
+        @apply bg-[#f9f9f8] text-[#2c3433] font-inter antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-manrope font-bold;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-[#5f5e5e] text-white px-6 py-3 rounded-[0.125rem] font-medium transition-all hover:bg-[#535252] tracking-wide uppercase text-sm;
+    }
+
+    .btn-tertiary {
+        @apply bg-[#46655d] text-white px-6 py-3 rounded-[0.125rem] font-medium transition-all hover:opacity-90 tracking-wide uppercase text-sm;
+    }
+
+    .card-architectural {
+        @apply bg-white p-8 transition-all hover:bg-[#fafafa] hover:shadow-[0_32px_32px_rgba(44,52,51,0.04)];
+    }
+
+    .label-md {
+        @apply text-[0.75rem] font-medium uppercase tracking-[0.05em] text-[#404948];
+    }
+}

@@ -1,0 +1,125 @@
+:root {
+    --bg-color: #fcfcfc;
+    --text-color: #1a1a1b;
+    --accent-color: #2e2e2e;
+    --white: #ffffff;
+    --overlay: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/hero.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay);
+    z-index: -1;
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02rem;
+}
+
+.motto {
+    font-size: 1.25rem;
+    color: var(--white);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn.primary {
+    background-color: var(--white);
+    color: var(--text-color);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05rem;
+}
+
+.btn.primary:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.subtext {
+    font-size: 0.9rem;
+    color: var(--white);
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .motto {
+        font-size: 1rem;
+    }
+}
